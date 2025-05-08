@@ -2,7 +2,7 @@
 title: Home
 ---
 
-# Linux Hacker Notes
+# Zack's Linux Hacker Notes
 
 Welcome to my personal collection of Linux notes, commands, projects, and learning resources.
 
