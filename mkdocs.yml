@@ -1,5 +1,5 @@
-site_name: Zack's Linux Hacker Notes
-site_description: Personal notes and resources for learning Linux distributions
+site_name: Linux Hacker Notes
+site_description: A focused guide to becoming an expert Linux hacker
 site_author: Zack
 
 # Repository
@@ -30,8 +30,13 @@ theme:
     - navigation.instant
     - navigation.tracking
     - navigation.expand
+    - navigation.sections
+    - navigation.tabs
+    - navigation.top
     - search.highlight
+    - search.suggest
     - content.code.copy
+    - content.tabs.link
 
 # Extensions
 markdown_extensions:
@@ -45,13 +50,40 @@ markdown_extensions:
   - pymdownx.keys
   - tables
   - footnotes
+  - attr_list
+  - def_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
 
 # Navigation structure
 nav:
   - Home: index.md
-  - Distributions: distributions/index.md
-  - Journal: journal/index.md
-  - Projects: projects/index.md
+  - Fundamentals:
+      - Overview: fundamentals/index.md
+      - Command Line Basics: fundamentals/command-line-basics.md
+      - File System Structure: fundamentals/file-system.md
+      - User Management: fundamentals/user-management.md
+      - Package Management: fundamentals/package-management.md
+  - System Administration:
+      - Overview: sysadmin/index.md
+      - System Monitoring: sysadmin/monitoring.md
+      - Service Management: sysadmin/services.md
+      - Networking: sysadmin/networking.md
+      - Security: sysadmin/security.md
+  - Distributions:
+      - Overview: distributions/index.md
+      - Arch-based: distributions/arch-based/index.md
+      - Debian-based: distributions/debian-based/index.md
+  - Hacking Lab:
+      - Overview: hacking-lab/index.md
+      - Projects: hacking-lab/projects.md
+      - Challenges: hacking-lab/challenges.md
+  - Reference:
+      - Overview: reference/index.md
+      - Command Cheatsheet: reference/commands/index.md
+      - Configuration Files: reference/config-files/index.md
+      - Troubleshooting: reference/troubleshooting.md
 
 # Plugins
 plugins:

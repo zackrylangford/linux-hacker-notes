@@ -2,39 +2,42 @@
 title: Home
 ---
 
-# Zack's Linux Hacker Notes
+# Linux Hacker Notes
 
-Welcome to my personal collection of Linux notes, commands, projects, and learning resources.
+**Your path to Linux mastery**
 
-This site serves as a knowledge base for my journey through different Linux distributions, command-line tools, and system administration techniques.
+Welcome to Linux Hacker Notes - a focused, practical guide to becoming an expert Linux user and administrator. This resource is designed to take you from basic commands to advanced system manipulation with a clean, straightforward approach.
 
-## What's Inside
+## Learning Path
 
-This site is organized to help me quickly find information about:
+<div class="grid cards" markdown>
 
-- **Different Linux Distributions** I use daily (EndeavourOS, Ubuntu, Xubuntu, Pop!_OS)
-- **Common Tasks** across distributions (updates, backups, customization)
-- **Reference Materials** (commands, config files, cheatsheets)
-- **My Learning Journal** documenting progress and discoveries
+- :fontawesome-solid-terminal: **Fundamentals**  
+  Master the essential skills every Linux hacker needs
+  [:octicons-arrow-right-24: Get started](fundamentals/index.md)
 
-## Quick Links
+- :material-shield-account: **System Administration**  
+  Learn to control, secure, and optimize Linux systems
+  [:octicons-arrow-right-24: Explore](sysadmin/index.md)
 
-### Distributions
-- [EndeavourOS](distributions/arch-based/endeavoros/index.md) (Arch-based)
-- [Ubuntu](distributions/debian-based/ubuntu/index.md) (Debian-based)
-- [Xubuntu](distributions/debian-based/xubuntu/index.md) (Debian-based with XFCE)
-- [Pop!_OS](distributions/debian-based/pop-os/index.md) (System76's Ubuntu-based distro)
+- :material-linux: **Distributions**  
+  Navigate the Linux ecosystem and its various flavors
+  [:octicons-arrow-right-24: Compare](distributions/index.md)
 
-### Common Tasks
-- [System Updates](tasks/system-maintenance/updates.md)
-- [Desktop Customization](tasks/customization/desktop-environments.md)
-- [Terminal Setup](tasks/customization/terminal.md)
+- :material-flask-outline: **Hacking Lab**  
+  Apply your skills with practical projects and challenges
+  [:octicons-arrow-right-24: Practice](hacking-lab/index.md)
 
-### Reference
-- [Command Reference](reference/commands/index.md)
-- [Configuration Files](reference/config-files/etc-explained.md)
-- [Cheatsheets](reference/cheatsheets/bash.md)
+</div>
 
-## About This Site
+## Quick Reference
 
-This site is built with MkDocs and the Material theme, hosted on GitHub Pages. It's designed to be a living document that grows as I learn more about Linux.
+Need something specific? Jump straight to our reference materials:
+
+- [Command Cheatsheet](reference/commands/index.md) - Essential commands for daily use
+- [Configuration Files](reference/config-files/index.md) - Common config files explained
+- [Troubleshooting Guide](reference/troubleshooting.md) - Solutions to common problems
+
+## About This Resource
+
+This site is built with a focus on practical knowledge and clean organization. It's designed to grow with you as you develop your Linux expertise, from your first commands to advanced system manipulation.
