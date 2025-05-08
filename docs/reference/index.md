@@ -1,29 +1,22 @@
-# Linux Reference
+---
+title: Reference
+---
 
-This section contains reference materials for Linux commands, configuration files, and cheatsheets.
+# Reference Materials
 
-## Commands
+This section provides quick access to essential reference materials for Linux users and administrators. Whether you need to look up a command syntax or understand a configuration file, these resources are designed to be concise and practical.
 
-Quick reference guides for common Linux commands:
+## Available References
 
-- [**Overview**](commands/index.md): Introduction to command-line usage
-- [**File Management**](commands/file-management.md): Commands for working with files and directories
-- [**System Information**](commands/system-info.md): Commands to get information about your system
-- [**Networking**](commands/networking.md): Network-related commands
-- [**Text Processing**](commands/text-processing.md): Commands for manipulating text
+- [Command Cheatsheet](commands/index.md) - Common commands organized by category
+- [Configuration Files](config-files/index.md) - Key configuration files explained
+- [Troubleshooting](troubleshooting.md) - Solutions to common Linux problems
 
-## Configuration Files
+## How to Use This Section
 
-Understanding important configuration files:
+These reference materials are designed to be consulted as needed during your Linux journey. Unlike the tutorial sections, these pages focus on providing quick, accurate information rather than step-by-step guidance.
 
-- [**/etc Explained**](config-files/etc-explained.md): Overview of the /etc directory
-- [**Home Directory**](config-files/home-directory.md): Understanding hidden files in your home directory
-- [**Important Configs**](config-files/important-configs.md): Key configuration files you should know about
+Bookmark the pages you find yourself returning to frequently for quick access.
 
-## Cheatsheets
-
-Quick reference guides for common tools:
-
-- [**Bash**](cheatsheets/bash.md): Bash scripting and command-line shortcuts
-- [**Vim**](cheatsheets/vim.md): Vim editor commands and usage
-- [**Tmux**](cheatsheets/tmux.md): Terminal multiplexer commands and configuration
+!!! tip "Search Function"
+    Use the search function at the top of the page to quickly find specific commands or topics across the entire site.

@@ -1,29 +1,32 @@
+---
+title: Linux Distributions
+---
+
 # Linux Distributions
 
-This section contains notes on the different Linux distributions I use regularly.
+This section provides an overview of various Linux distributions, their characteristics, and when to use them. Understanding the differences between distributions is essential for choosing the right tool for your specific needs.
 
-## Arch-based Distributions
+## Distribution Families
 
-[Arch Linux](https://archlinux.org/) is known for its simplicity, modernity, pragmatism, user centrality, and versatility. Arch-based distributions build upon this foundation while adding their own features and tools.
+Linux distributions are typically grouped into families based on their package management systems and other shared characteristics:
 
-- [**EndeavourOS**](arch-based/endeavoros/index.md): A rolling release distro based on Arch Linux that aims to be lightweight and easy to use while staying close to pure Arch.
+- [Arch-based](arch-based/index.md) - Rolling release model with cutting-edge software
+- [Debian-based](debian-based/index.md) - Stable distributions with extensive package repositories
 
-## Debian-based Distributions
+## Choosing a Distribution
 
-[Debian](https://www.debian.org/) is known for its stability, extensive software repositories, and commitment to free software principles. Many popular distributions are based on Debian.
+When selecting a Linux distribution, consider:
 
-- [**Ubuntu**](debian-based/ubuntu/index.md): One of the most popular Linux distributions, known for its ease of use and regular release schedule.
-- [**Xubuntu**](debian-based/xubuntu/index.md): Ubuntu with the lightweight XFCE desktop environment.
-- [**Pop!_OS**](debian-based/pop-os/index.md): System76's Ubuntu-based distribution focused on creators and makers.
+- **Stability vs. Cutting Edge** - Do you need the latest software or rock-solid reliability?
+- **Package Management** - Different distributions use different package managers (apt, pacman, dnf)
+- **Release Cycle** - Rolling releases vs. fixed releases
+- **Community Support** - Size and activity of the user community
+- **Default Desktop Environment** - GNOME, KDE, XFCE, etc.
+- **System Requirements** - Some distributions are optimized for older hardware
 
-## Common Topics
+## Getting Started
 
-These topics apply across different distributions:
+If you're new to Linux, we recommend starting with a user-friendly distribution like Ubuntu or Linux Mint. As you gain experience, you can explore more advanced distributions like Arch Linux or specialized distributions for specific use cases.
 
-- [**Package Management Comparison**](common/package-management-comparison.md): How package management works across different distributions.
-- [**Desktop Environments**](common/desktop-environments.md): Overview of different desktop environments available on Linux.
-- [**Terminal Essentials**](common/terminal-essentials.md): Terminal tools and configurations that work across distributions.
-
-## Distribution Comparison
-
-For a side-by-side comparison of features, package managers, and other aspects of these distributions, see the [**Distribution Comparison**](comparison.md) page.
+!!! tip "Try Before You Install"
+    Most distributions offer live USB options that let you try the system without installing it on your computer.
