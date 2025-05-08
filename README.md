@@ -1,4 +1,4 @@
-# Linux Hacker Notes
+# Zack's Linux Hacker Notes
 
 A personal documentation site for Linux learning, commands, projects, and resources.
 
