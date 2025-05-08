@@ -16,14 +16,27 @@ This repository contains my notes and resources for learning various Linux distr
 
 To run this site locally:
 
-1. Install MkDocs and the Material theme:
-   ```
+1. Set up a Python virtual environment and install dependencies:
+   ```bash
+   # Create a virtual environment
+   python -m venv venv
+   
+   # Activate the virtual environment
+   source venv/bin/activate  # On Linux/macOS
+   # or
+   # .\venv\Scripts\activate  # On Windows
+   
+   # Install MkDocs and the Material theme
    pip install mkdocs mkdocs-material
    ```
 
 2. Start the development server:
-   ```
+   ```bash
+   # With virtual environment activated
    mkdocs serve
+   
+   # Or use the convenience script
+   ./run_mkdocs.sh
    ```
 
 3. Open your browser to http://localhost:8000

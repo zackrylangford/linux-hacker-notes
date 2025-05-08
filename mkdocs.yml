@@ -1,9 +1,9 @@
 site_name: Zack's Linux Hacker Notes
-site_description: Personal notes and resources for learning Linux
-site_author: Zackry Langford
+site_description: Personal notes and resources for learning Linux distributions
+site_author: Zack
 
 # Repository
-repo_name: linux-hacker-notes
+repo_name: zackrylangford/linux-hacker-notes
 repo_url: https://github.com/zackrylangford/linux-hacker-notes
 
 # Theme configuration
@@ -13,16 +13,16 @@ theme:
     # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
-      accent: indigo
+      primary: green
+      accent: lime
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
     # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: blue
-      accent: blue
+      primary: green
+      accent: lime
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
@@ -30,9 +30,7 @@ theme:
     - navigation.instant
     - navigation.tracking
     - navigation.expand
-    - navigation.indexes
     - search.highlight
-    - search.share
     - content.code.copy
 
 # Extensions
@@ -44,8 +42,6 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
   - pymdownx.keys
   - tables
   - footnotes
@@ -53,15 +49,9 @@ markdown_extensions:
 # Navigation structure
 nav:
   - Home: index.md
-  - Commands: 
-      - Overview: commands/index.md
-  - Projects: projects/index.md
-  - Lessons: lessons/index.md
-  - Scripts: scripts/index.md
-  - Distributions:
-      - Overview: distributions/index.md
+  - Distributions: distributions/index.md
   - Journal: journal/index.md
-  - Thoughts: thoughts/index.md
+  - Projects: projects/index.md
 
 # Plugins
 plugins:
