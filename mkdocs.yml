@@ -1,7 +1,6 @@
 site_name: Linux Hacker Notes
 site_description: Personal notes and resources for learning Linux distributions
 site_author: Zack
-site_url: https://zackrylangford.github.io/linux-hacker-notes/
 
 # Repository
 repo_name: zackrylangford/linux-hacker-notes
@@ -11,7 +10,7 @@ repo_url: https://github.com/zackrylangford/linux-hacker-notes
 theme:
   name: material
   palette:
-    # Light mode (still Matrix-inspired but readable)
+    # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: green
@@ -19,7 +18,7 @@ theme:
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
-    # Dark mode (Matrix-inspired)
+    # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: green
@@ -27,26 +26,12 @@ theme:
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
-  font:
-    text: Roboto Mono
-    code: Roboto Mono
-  icon:
-    logo: material/console
   features:
     - navigation.instant
     - navigation.tracking
     - navigation.expand
-    - navigation.indexes
-    - navigation.sections
-    - navigation.tabs
-    - navigation.top
     - search.highlight
-    - search.share
     - content.code.copy
-    - content.code.annotate
-  
-  # Custom CSS
-  custom_dir: overrides
 
 # Extensions
 markdown_extensions:
@@ -54,110 +39,20 @@ markdown_extensions:
   - codehilite
   - pymdownx.highlight:
       anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.keys
-  - pymdownx.critic
-  - pymdownx.caret
-  - pymdownx.mark
-  - pymdownx.tilde
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - attr_list
-  - md_in_html
-  - def_list
   - tables
   - footnotes
 
 # Navigation structure
 nav:
   - Home: index.md
-  - Distributions:
-      - Overview: distributions/index.md
-      - Common Topics: 
-          - Package Management: distributions/common/package-management-comparison.md
-          - Desktop Environments: distributions/common/desktop-environments.md
-          - Terminal Essentials: distributions/common/terminal-essentials.md
-      - Arch-based:
-          - Overview: distributions/arch-based/index.md
-          - EndeavourOS: 
-              - Overview: distributions/arch-based/endeavoros/index.md
-              - Installation: distributions/arch-based/endeavoros/installation.md
-              - Updates: distributions/arch-based/endeavoros/updates.md
-              - Configuration: distributions/arch-based/endeavoros/configuration.md
-      - Debian-based:
-          - Overview: distributions/debian-based/index.md
-          - Ubuntu:
-              - Overview: distributions/debian-based/ubuntu/index.md
-              - Installation: distributions/debian-based/ubuntu/installation.md
-              - Updates: distributions/debian-based/ubuntu/updates.md
-          - Xubuntu:
-              - Overview: distributions/debian-based/xubuntu/index.md
-              - XFCE Customization: distributions/debian-based/xubuntu/xfce-customization.md
-          - Pop!_OS:
-              - Overview: distributions/debian-based/pop-os/index.md
-              - System76 Features: distributions/debian-based/pop-os/system76-specific.md
-      - Comparison: distributions/comparison.md
-  - Tasks:
-      - Overview: tasks/index.md
-      - System Maintenance:
-          - Updates: tasks/system-maintenance/updates.md
-          - Backups: tasks/system-maintenance/backups.md
-          - Cleaning: tasks/system-maintenance/cleaning.md
-      - Customization:
-          - Desktop Environments: tasks/customization/desktop-environments.md
-          - Terminal: tasks/customization/terminal.md
-          - Themes: tasks/customization/themes.md
-      - Software:
-          - Development Tools: tasks/software/development-tools.md
-          - Productivity: tasks/software/productivity.md
-          - Media: tasks/software/media.md
-      - Troubleshooting:
-          - Boot Issues: tasks/troubleshooting/boot-issues.md
-          - Network Issues: tasks/troubleshooting/network-issues.md
-          - Package Issues: tasks/troubleshooting/package-issues.md
-  - Reference:
-      - Overview: reference/index.md
-      - Commands:
-          - Overview: reference/commands/index.md
-          - File Management: reference/commands/file-management.md
-          - System Info: reference/commands/system-info.md
-          - Networking: reference/commands/networking.md
-          - Text Processing: reference/commands/text-processing.md
-      - Config Files:
-          - /etc Explained: reference/config-files/etc-explained.md
-          - Home Directory: reference/config-files/home-directory.md
-          - Important Configs: reference/config-files/important-configs.md
-      - Cheatsheets:
-          - Bash: reference/cheatsheets/bash.md
-          - Vim: reference/cheatsheets/vim.md
-          - Tmux: reference/cheatsheets/tmux.md
+  - Distributions: distributions/index.md
   - Journal: journal/index.md
   - Projects: projects/index.md
 
 # Plugins
 plugins:
   - search
-  - tags
-  - minify:
-      minify_html: true
-
-# Extra configuration
-extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/zackrylangford
-  generator: false
-  
-extra_css:
-  - stylesheets/extra.css
