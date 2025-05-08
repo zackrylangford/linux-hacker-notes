@@ -13,6 +13,10 @@
       
       
       
+        <link rel="prev" href="../fundamentals/file-system/">
+      
+      
+        <link rel="next" href="../distributions/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +24,7 @@
     
     
       
-        <title>Lessons - Linux Hacker Notes</title>
+        <title>System Administration - Linux Hacker Notes</title>
       
     
     
@@ -72,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#lessons" class="md-skip">
+        <a href="#system-administration" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Lessons
+              System Administration
             
           </span>
         </div>
@@ -256,11 +260,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../sysadmin/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -570,28 +576,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -604,7 +613,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             System Administration
@@ -615,10 +624,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../sysadmin/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -629,6 +660,53 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#key-areas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Areas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-it-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why It Matters
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting Started
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -641,7 +719,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sysadmin/monitoring.md" class="md-nav__link">
+      <a href="monitoring.md" class="md-nav__link">
         
   
   
@@ -664,7 +742,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sysadmin/services.md" class="md-nav__link">
+      <a href="services.md" class="md-nav__link">
         
   
   
@@ -687,7 +765,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sysadmin/networking.md" class="md-nav__link">
+      <a href="networking.md" class="md-nav__link">
         
   
   
@@ -710,7 +788,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sysadmin/security.md" class="md-nav__link">
+      <a href="security.md" class="md-nav__link">
         
   
   
@@ -1146,18 +1224,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#recent-lessons" class="md-nav__link">
+  <a href="#key-areas" class="md-nav__link">
     <span class="md-ellipsis">
-      Recent Lessons
+      Key Areas
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#topics" class="md-nav__link">
+  <a href="#why-it-matters" class="md-nav__link">
     <span class="md-ellipsis">
-      Topics
+      Why It Matters
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting Started
     </span>
   </a>
   
@@ -1182,26 +1269,39 @@
   
 
 
-<h1 id="lessons">Lessons</h1>
-<p>This section contains tutorials and lessons learned while working with Linux.</p>
-<h2 id="recent-lessons">Recent Lessons</h2>
+<h1 id="system-administration">System Administration</h1>
+<p>This section covers the essential skills and knowledge needed to effectively administer Linux systems. From monitoring system performance to securing your environment, these guides will help you become a proficient Linux system administrator.</p>
+<h2 id="key-areas">Key Areas</h2>
 <ul>
-<li>Lesson 1</li>
-<li>Lesson 2</li>
+<li><a href="monitoring.md">System Monitoring</a> - Track system performance and resource usage</li>
+<li><a href="services.md">Service Management</a> - Control system services and daemons</li>
+<li><a href="networking.md">Networking</a> - Configure and troubleshoot network connections</li>
+<li><a href="security.md">Security</a> - Implement best practices for system security</li>
 </ul>
-<h2 id="topics">Topics</h2>
+<h2 id="why-it-matters">Why It Matters</h2>
+<p>Strong system administration skills allow you to:</p>
 <ul>
-<li>Shell Scripting</li>
-<li>System Configuration</li>
-<li>Security Hardening</li>
-<li>Performance Tuning</li>
+<li>Maintain stable, high-performance systems</li>
+<li>Quickly identify and resolve issues</li>
+<li>Implement proper security controls</li>
+<li>Automate routine tasks</li>
+<li>Scale your infrastructure effectively</li>
 </ul>
+<h2 id="getting-started">Getting Started</h2>
+<p>If you're new to system administration, we recommend starting with <a href="monitoring.md">System Monitoring</a> to learn how to observe and understand your system's behavior. This provides a foundation for the other topics in this section.</p>
+<div class="admonition note">
+<p class="admonition-title">Prerequisites</p>
+<p>Before diving into system administration, make sure you're comfortable with the topics covered in the <a href="../fundamentals/">Fundamentals</a> section.</p>
+</div>
 
 
 
 
 
 
+
+  
+  
 
 
 

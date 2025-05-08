@@ -13,6 +13,10 @@
       
       
       
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="command-line-basics/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +24,7 @@
     
     
       
-        <title>Lessons - Linux Hacker Notes</title>
+        <title>Linux Fundamentals - Linux Hacker Notes</title>
       
     
     
@@ -72,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#lessons" class="md-skip">
+        <a href="#linux-fundamentals" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Lessons
+              Linux Fundamentals
             
           </span>
         </div>
@@ -236,11 +240,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../fundamentals/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -403,28 +409,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -437,7 +446,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Fundamentals
@@ -448,10 +457,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../fundamentals/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -462,6 +493,53 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#core-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Concepts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-these-matter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why These Matter
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting Started
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -474,7 +552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../fundamentals/command-line-basics/" class="md-nav__link">
+      <a href="command-line-basics/" class="md-nav__link">
         
   
   
@@ -497,7 +575,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../fundamentals/file-system/" class="md-nav__link">
+      <a href="file-system/" class="md-nav__link">
         
   
   
@@ -520,7 +598,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../fundamentals/user-management.md" class="md-nav__link">
+      <a href="user-management.md" class="md-nav__link">
         
   
   
@@ -543,7 +621,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../fundamentals/package-management.md" class="md-nav__link">
+      <a href="package-management.md" class="md-nav__link">
         
   
   
@@ -1146,18 +1224,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#recent-lessons" class="md-nav__link">
+  <a href="#core-concepts" class="md-nav__link">
     <span class="md-ellipsis">
-      Recent Lessons
+      Core Concepts
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#topics" class="md-nav__link">
+  <a href="#why-these-matter" class="md-nav__link">
     <span class="md-ellipsis">
-      Topics
+      Why These Matter
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting Started
     </span>
   </a>
   
@@ -1182,26 +1269,32 @@
   
 
 
-<h1 id="lessons">Lessons</h1>
-<p>This section contains tutorials and lessons learned while working with Linux.</p>
-<h2 id="recent-lessons">Recent Lessons</h2>
+<h1 id="linux-fundamentals">Linux Fundamentals</h1>
+<p>This section covers the essential knowledge and skills that form the foundation of Linux expertise. Whether you're just starting out or refreshing your knowledge, these fundamentals will prepare you for more advanced topics.</p>
+<h2 id="core-concepts">Core Concepts</h2>
 <ul>
-<li>Lesson 1</li>
-<li>Lesson 2</li>
+<li><a href="command-line-basics/">Command Line Basics</a> - Master the terminal and shell</li>
+<li><a href="file-system/">File System Structure</a> - Understand how Linux organizes files</li>
+<li><a href="user-management.md">User Management</a> - Create and manage users and permissions</li>
+<li><a href="package-management.md">Package Management</a> - Install, update, and manage software</li>
 </ul>
-<h2 id="topics">Topics</h2>
-<ul>
-<li>Shell Scripting</li>
-<li>System Configuration</li>
-<li>Security Hardening</li>
-<li>Performance Tuning</li>
-</ul>
+<h2 id="why-these-matter">Why These Matter</h2>
+<p>Understanding these fundamentals is crucial for anyone aspiring to become a Linux expert. These concepts form the building blocks for all advanced Linux skills and are used daily by system administrators, developers, and security professionals.</p>
+<h2 id="getting-started">Getting Started</h2>
+<p>If you're new to Linux, we recommend starting with <a href="command-line-basics/">Command Line Basics</a> and working through each topic in order. Each guide includes practical examples and exercises to reinforce your learning.</p>
+<div class="admonition tip">
+<p class="admonition-title">Practice Makes Perfect</p>
+<p>The best way to learn Linux is by doing. Set up a virtual machine or use a live USB to experiment without risk to your main system.</p>
+</div>
 
 
 
 
 
 
+
+  
+  
 
 
 
