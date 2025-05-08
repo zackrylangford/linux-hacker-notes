@@ -6,13 +6,13 @@ This site serves as a knowledge base for my journey through different Linux dist
 
 ## Site Sections
 
-- **[Commands](commands/)**: Reference guide for Linux commands and their usage
-- **[Projects](projects/)**: Linux-based projects I'm working on
-- **[Lessons](lessons/)**: Tutorials and lessons learned
-- **[Scripts](scripts/)**: Useful scripts for automation and system management
-- **[Distributions](distributions/)**: Notes on different Linux distributions
-- **[Journal](journal/)**: My learning journal
-- **[Thoughts](thoughts/)**: Ideas and concepts related to Linux
+- **[Commands](commands/index.md)**: Reference guide for Linux commands and their usage
+- **[Projects](projects/index.md)**: Linux-based projects I'm working on
+- **[Lessons](lessons/index.md)**: Tutorials and lessons learned
+- **[Scripts](scripts/index.md)**: Useful scripts for automation and system management
+- **[Distributions](distributions/index.md)**: Notes on different Linux distributions
+- **[Journal](journal/index.md)**: My learning journal
+- **[Thoughts](thoughts/index.md)**: Ideas and concepts related to Linux
 
 ## About This Site
 
