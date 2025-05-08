@@ -1,3 +1,8 @@
+---
+template: home.html
+title: Home
+---
+
 # Linux Hacker Notes
 
 Welcome to my personal collection of Linux notes, commands, projects, and learning resources.

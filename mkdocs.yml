@@ -11,22 +11,27 @@ repo_url: https://github.com/zackrylangford/linux-hacker-notes
 theme:
   name: material
   palette:
-    # Light mode
+    # Light mode (still Matrix-inspired but readable)
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: black
-      accent: green
+      primary: green
+      accent: lime
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
-    # Dark mode
+    # Dark mode (Matrix-inspired)
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: black
-      accent: green
+      primary: green
+      accent: lime
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
+  font:
+    text: Roboto Mono
+    code: Roboto Mono
+  icon:
+    logo: material/console
   features:
     - navigation.instant
     - navigation.tracking
@@ -34,9 +39,14 @@ theme:
     - navigation.indexes
     - navigation.sections
     - navigation.tabs
+    - navigation.top
     - search.highlight
     - search.share
     - content.code.copy
+    - content.code.annotate
+  
+  # Custom CSS
+  custom_dir: overrides
 
 # Extensions
 markdown_extensions:
@@ -44,12 +54,28 @@ markdown_extensions:
   - codehilite
   - pymdownx.highlight:
       anchor_linenums: true
-  - pymdownx.superfences
-  - pymdownx.tabbed:
-      alternate_style: true
+      line_spans: __span
+      pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.keys
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - attr_list
+  - md_in_html
+  - def_list
   - tables
   - footnotes
 
@@ -122,3 +148,16 @@ nav:
 # Plugins
 plugins:
   - search
+  - tags
+  - minify:
+      minify_html: true
+
+# Extra configuration
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/zackrylangford
+  generator: false
+  
+extra_css:
+  - stylesheets/extra.css

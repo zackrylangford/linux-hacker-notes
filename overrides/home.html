@@ -1,0 +1,270 @@
+{% extends "main.html" %}
+
+{% block tabs %}
+  {{ super() }}
+  <style>
+    .md-header {
+      position: initial;
+    }
+    .md-main__inner {
+      margin: 0;
+    }
+    .md-content {
+      display: none;
+    }
+    @keyframes matrix-rain {
+      0% {
+        top: -100%;
+      }
+      100% {
+        top: 100%;
+      }
+    }
+    .matrix-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: #000;
+      z-index: -1;
+    }
+    .matrix-rain {
+      color: #0f0;
+      position: absolute;
+      top: 0;
+      font-size: 1.5em;
+      font-family: 'Roboto Mono', monospace;
+      animation: matrix-rain 10s linear infinite;
+    }
+    .hero {
+      margin: 32px 0;
+      color: #00ff00;
+      font-family: 'Roboto Mono', monospace;
+    }
+    .hero h1 {
+      margin-bottom: 1rem;
+      color: #00ff00;
+      font-weight: 700;
+      font-size: 2.5rem;
+      text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    }
+    .hero__content {
+      padding: 2rem;
+      background-color: rgba(0, 0, 0, 0.8);
+      border-radius: 5px;
+      box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .hero__content p {
+      margin: 1rem 0;
+      font-size: 1.2rem;
+    }
+    .hero__content .terminal-text {
+      font-family: 'Roboto Mono', monospace;
+      color: #00ff00;
+      background-color: rgba(0, 20, 0, 0.8);
+      padding: 1rem;
+      border-radius: 5px;
+      border-left: 4px solid #00ff00;
+      overflow: hidden;
+      white-space: nowrap;
+      margin: 0 auto;
+      letter-spacing: .15em;
+      animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+    }
+    .feature-item {
+      font-family: 'Roboto Mono', monospace;
+      color: #00ff00;
+      background-color: rgba(0, 20, 0, 0.6);
+      margin: 1rem 0;
+      padding: 1rem;
+      border-radius: 5px;
+      border-left: 4px solid #00ff00;
+      transition: all 0.3s ease;
+    }
+    .feature-item:hover {
+      transform: translateX(5px);
+      box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+    }
+    .feature-item h2 {
+      color: #00ff00;
+      font-size: 1.5rem;
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+    .feature-item p {
+      margin: 0;
+    }
+    .quick-links {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+    .quick-link {
+      background-color: rgba(0, 20, 0, 0.6);
+      padding: 1rem;
+      border-radius: 5px;
+      border-left: 4px solid #00ff00;
+      transition: all 0.3s ease;
+    }
+    .quick-link:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+    }
+    .quick-link h3 {
+      color: #00ff00;
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+    .quick-link ul {
+      margin: 0;
+      padding-left: 1.5rem;
+    }
+    .quick-link a {
+      color: #00ff00;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    .quick-link a:hover {
+      text-shadow: 0 0 8px rgba(0, 255, 0, 0.8);
+    }
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: #00ff00; }
+    }
+  </style>
+
+  <div class="matrix-container" id="matrix-bg"></div>
+
+  <section class="hero">
+    <div class="md-grid">
+      <div class="hero__content">
+        <h1>Linux Hacker Notes</h1>
+        <div class="terminal-text" id="terminal-text">Welcome to the Linux Matrix...</div>
+        <p>
+          A personal knowledge base for Linux distributions, commands, and system administration.
+        </p>
+        
+        <div class="feature-item">
+          <h2>Distributions</h2>
+          <p>Notes on EndeavourOS, Ubuntu, Xubuntu, Pop!_OS and more.</p>
+        </div>
+        
+        <div class="feature-item">
+          <h2>Commands & References</h2>
+          <p>Quick reference guides for Linux commands, configuration files, and tools.</p>
+        </div>
+        
+        <div class="feature-item">
+          <h2>Tasks & Tutorials</h2>
+          <p>Common tasks and how to accomplish them across different distributions.</p>
+        </div>
+        
+        <h2>Quick Links</h2>
+        <div class="quick-links">
+          <div class="quick-link">
+            <h3>Distributions</h3>
+            <ul>
+              <li><a href="{{ 'distributions/arch-based/endeavoros/index/' | url }}">EndeavourOS</a></li>
+              <li><a href="{{ 'distributions/debian-based/ubuntu/index/' | url }}">Ubuntu</a></li>
+              <li><a href="{{ 'distributions/debian-based/xubuntu/index/' | url }}">Xubuntu</a></li>
+              <li><a href="{{ 'distributions/debian-based/pop-os/index/' | url }}">Pop!_OS</a></li>
+            </ul>
+          </div>
+          
+          <div class="quick-link">
+            <h3>Common Tasks</h3>
+            <ul>
+              <li><a href="{{ 'tasks/system-maintenance/updates/' | url }}">System Updates</a></li>
+              <li><a href="{{ 'tasks/customization/terminal/' | url }}">Terminal Setup</a></li>
+              <li><a href="{{ 'tasks/troubleshooting/boot-issues/' | url }}">Boot Issues</a></li>
+            </ul>
+          </div>
+          
+          <div class="quick-link">
+            <h3>References</h3>
+            <ul>
+              <li><a href="{{ 'reference/commands/index/' | url }}">Commands</a></li>
+              <li><a href="{{ 'reference/cheatsheets/bash/' | url }}">Bash Cheatsheet</a></li>
+              <li><a href="{{ 'reference/config-files/etc-explained/' | url }}">Config Files</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Matrix rain effect
+    function createMatrixRain() {
+      const container = document.getElementById('matrix-bg');
+      const width = container.offsetWidth;
+      const height = container.offsetHeight;
+      const columns = Math.floor(width / 20);
+      
+      for (let i = 0; i < columns; i++) {
+        const drop = document.createElement('div');
+        drop.className = 'matrix-rain';
+        drop.style.left = `${i * 20}px`;
+        drop.style.animationDelay = `${Math.random() * 5}s`;
+        drop.style.animationDuration = `${5 + Math.random() * 10}s`;
+        
+        // Create random characters
+        let text = '';
+        const length = 10 + Math.floor(Math.random() * 20);
+        for (let j = 0; j < length; j++) {
+          // Mix of numbers, letters, and special characters
+          const charCode = Math.random() > 0.5 ? 
+            48 + Math.floor(Math.random() * 10) : // 0-9
+            65 + Math.floor(Math.random() * 26);  // A-Z
+          text += String.fromCharCode(charCode);
+        }
+        drop.textContent = text;
+        
+        container.appendChild(drop);
+      }
+    }
+    
+    // Terminal typing effect
+    function typeWriter() {
+      const text = "Welcome to the Linux Matrix...";
+      const terminalText = document.getElementById("terminal-text");
+      let i = 0;
+      
+      function type() {
+        if (i < text.length) {
+          terminalText.innerHTML = text.substring(0, i+1) + '<span style="border-right: .15em solid #00ff00; animation: blink-caret .75s step-end infinite;"></span>';
+          i++;
+          setTimeout(type, 100);
+        } else {
+          // Reset after a delay
+          setTimeout(() => {
+            i = 0;
+            type();
+          }, 3000);
+        }
+      }
+      
+      type();
+    }
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      createMatrixRain();
+      typeWriter();
+    });
+  </script>
+{% endblock %}
+
+{% block content %}{% endblock %}
+
+{% block footer %}
+  {{ super() }}
+{% endblock %}
